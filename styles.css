@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+h1 {
+    margin: 0;
+
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    background-color: bisque;
+    color: rgb(212, 123, 138);
+
+}
+
+header h1{
+    width: 50%;
+
+
+}
+
+button {
+    padding: 1.2rem;
+    cursor: pointer;
+  margin-right: .5rem;
+  /* align-self: right; */
+
+ 
+}
+
+main {
+    background-color: burlywood;
+    display: block;
+ 
+
+    
+}
+
+
+
+
+
+
+
+#fd {
+    width: 350px;
+    height: 450px;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+
+   
