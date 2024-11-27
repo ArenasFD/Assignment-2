@@ -1,53 +1,60 @@
-intro.addEventListener("click",function(){
-    pagetitle.innerHTML= "Introduction";
-    console.log ("intro")
-    document.body.classList.remove("sprinkles");
-	document.body.classList.remove("boston");
-	document.body.classList.remove("maple");
-    document.body.classList.add("intro" );
+about.addEventListener("click",function(){
+    pagetitle.innerHTML= "Donut's With Diego";
+    content.innerHTML= "Your host Diego Arenas is always on the lookout for Calgary’s best donut. Using a rating scale from 1-14, he takes into account different categories such as; presentation, mouth feel, shop ambiance and flavour. Each donut is evaluated in two bites, with each bite receiving a ranking that contributes to the final evaluation. Today’s donut is the “BOSTON CREAM” Donut from Tim Hortons.  where your host Diego Arenas reviews donuts throughout the city of Calgary Alberta.  With a ranking system from 1-14 (like a PH scale) the ranking system takes into account multiple profiles such as : Presentation, Flavour, Mouth Feel and Tenderness.";
+     heads.innerHTML= "About";
+    console.log ("about")
+    document.body.classList.remove("bite1");
+	document.body.classList.remove("bite2");
+	document.body.classList.remove("score");
+    document.body.classList.add("about" );
     document.getElementById('fd').src="ddonut.jpeg";
 	document.getElementById('fd').alt= " Diego holding Donut";
 
-// Currently working on changin photos// 
 
 
 })
 
-sprinkles.addEventListener("click",function(){
+bite1.addEventListener("click",function(){
     
-    pagetitle.innerHTML= "Sprinkles";
-    console.log ("sprinkels")
-    document.body.classList.remove("intro");
-	document.body.classList.remove("boston");
-	document.body.classList.remove("maple");
-    document.body.classList.add("sprinkles" );
-    document.getElementById('fd').src="s.nut.jpeg";
+    pagetitle.innerHTML= "Donut's With Diego";
+    content.innerHTML= "Initial bite was fluffy with a great ratio of chocolate to dough. Great mouth feel with a very soft, yet fulfilling bite.Chocolate topping was intact and presented well for a mass produced donut but you could feel the lack of love in the initial presentation. First Bite Score - 7/14";
+   heads.innerHTML = "Bite 1: 7/14";
+    console.log ("bite1");
+    document.body.classList.remove("about");
+	document.body.classList.remove("bite2");
+	document.body.classList.remove("score");
+    document.body.classList.add("bite1" );
+    document.getElementById('fd').src="1st.png";
 	document.getElementById('fd').alt= " Sprinkle Donut Bite";
 
 })
 
-boston.addEventListener("click",function(){
+bite2.addEventListener("click",function(){
     
-    pagetitle.innerHTML= "Boston Cream";
-    console.log ("boston")
-    document.body.classList.remove("intro");
-	document.body.classList.remove("sprinkles");
-	document.body.classList.remove("maple");
-    document.body.classList.add("boston" );
-    document.getElementById('fd').src="b.nut.jpeg";
+    pagetitle.innerHTML= "Donut's With Diego";
+    content.innerHTML= " First opportunity to receive a bite with the cream filling, and it did not disappoint. Excellent chocolate- cream-dough ratio that surprised me with its balance. Very impressed with the second bite and overall experience. Second Bite Score - 9/14";
+    heads.innerHTML = "Bite 2: 9/14";
+    console.log ("bite2")
+    document.body.classList.remove("about");
+	document.body.classList.remove("bite1");
+	document.body.classList.remove("score");
+    document.body.classList.add("bite2" );
+    document.getElementById('fd').src="2nd.png";
 	document.getElementById('fd').alt= " Boston Cream Donut Bite";
 
 })
 
-maple.addEventListener("click",function(){
+score.addEventListener("click",function(){
     
-    pagetitle.innerHTML= "Canadian Maple";
-    console.log ("maple")
-    document.body.classList.remove("intro");
-	document.body.classList.remove("sprinkles");
-	document.body.classList.remove("maple");
-    document.body.classList.add("maple" );
-    document.getElementById('fd').src="m.nut.jpeg";
-	document.getElementById('fd').alt= " Canadian Maple Donut Bite";
+    pagetitle.innerHTML= "Donut's With Diego";
+    content.innerHTML= " For a franchise that reaches a national audience, Tim Hortons has mastered consistency in their Boston Cream donut. Their ability to supply a consistent donut nationwide covers up the presentation flaws that comes with placing a donut in a bag. However, I’m still very impressed.";
+    heads.innerHTML = "Final Score : 8/14";
+    console.log ("score")
+    document.body.classList.remove("about");
+	document.body.classList.remove("bite1");
+	document.body.classList.remove("bite2");
+    document.body.classList.add("score" );
+    document.getElementById('fd').src="full.png";
+	document.getElementById('fd').alt= " Full Boston Cream Donut";
 
 })
